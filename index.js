@@ -50,8 +50,8 @@ for (let i = 0; i < testimonialsItem.length; i++) {
 }
 
 // add click event to modal close button
-modalCloseBtn.addEventListener("click", testimonialsModalFunc);
-overlay.addEventListener("click", testimonialsModalFunc);
+// modalCloseBtn.addEventListener("click", testimonialsModalFunc);
+// overlay.addEventListener("click", testimonialsModalFunc);
 
 
 
@@ -74,6 +74,42 @@ for (let i = 0; i < selectItems.length; i++) {
 
     });
 }
+
+const modalFunc = function () {
+    elementToggleFunc(modalContainer);
+    elementToggleFunc(overlay);
+}
+
+modalCloseBtn.addEventListener("click", modalFunc);
+overlay.addEventListener("click", modalFunc);
+
+const handlePortfolioItemClick = function (item) {
+    item.addEventListener("click", function () {
+        modalImg.src = this.querySelector("img").src;
+        modalImg.alt = this.querySelector("img").alt;
+        modalTitle.innerHTML = this.querySelector(".project-title").innerHTML;
+        modalText.innerHTML = this.querySelector(".project-details").innerHTML;
+
+        modalFunc();
+    });
+}
+
+const handleBlogItemClick = function (item) {
+    item.addEventListener("click", function () {
+        modalImg.src = this.querySelector("img").src;
+        modalImg.alt = this.querySelector("img").alt;
+        modalTitle.innerHTML = this.querySelector(".blog-item-title").innerHTML;
+        modalText.innerHTML = this.querySelector(".blog-text").innerHTML;
+
+        modalFunc();
+    });
+}
+
+const portfolioItems = document.querySelectorAll("[data-portfolio-item]");
+portfolioItems.forEach(handlePortfolioItemClick);
+
+const blogItems = document.querySelectorAll("[data-blog-item]");
+blogItems.forEach(handleBlogItemClick);
 
 // filter variables
 const filterItems = document.querySelectorAll("[data-filter-item]");
@@ -190,3 +226,58 @@ for (let i = 0; i < navigationLinks.length; i++) {
 
     });
 }
+
+
+// // element toggle function
+// const portfolioElementToggleFunc = function (elem) { elem.classList.toggle("active"); }
+
+// // modal variables
+// const portfolioModalContainer = document.querySelector("[data-modal-container]");
+// const portfolioModalCloseBtn = document.querySelector("[data-modal-close-btn]");
+// const portfolioOverlay = document.querySelector("[data-overlay]");
+
+// const portfolioModalImg = document.querySelector("[data-modal-img]");
+// const portfolioModalTitle = document.querySelector("[data-modal-title]");
+// const portfolioModalText = document.querySelector("[data-modal-text]");
+
+// // modal toggle function
+// const modalFunc = function () {
+//   modalContainer.classList.toggle("active");
+//   overlay.classList.toggle("active");
+// }
+
+// // add event to close modal
+// modalCloseBtn.addEventListener("click", modalFunc);
+// overlay.addEventListener("click", modalFunc);
+
+// // function to handle portfolio item click
+// const handlePortfolioItemClick = function (item) {
+//   item.addEventListener("click", function () {
+//     modalImg.src = this.querySelector("[data-portfolio-image]").src;
+//     modalImg.alt = this.querySelector("[data-portfolio-image]").alt;
+//     modalTitle.innerHTML = this.querySelector("[data-portfolio-title]").innerHTML;
+//     modalText.innerHTML = this.querySelector("[data-portfolio-text]").innerHTML;
+
+//     modalFunc();
+//   });
+// }
+
+// // function to handle blog item click
+// const handleBlogItemClick = function (item) {
+//   item.addEventListener("click", function () {
+//     modalImg.src = this.querySelector("[data-blog-image]").src;
+//     modalImg.alt = this.querySelector("[data-blog-image]").alt;
+//     modalTitle.innerHTML = this.querySelector("[data-blog-title]").innerHTML;
+//     modalText.innerHTML = this.querySelector("[data-blog-text]").innerHTML;
+
+//     modalFunc();
+//   });
+// }
+
+// // add click events to all portfolio items
+// const portfolioItems = document.querySelectorAll("[data-portfolio-item]");
+// portfolioItems.forEach(handlePortfolioItemClick);
+
+// // add click events to all blog items
+// const blogItems = document.querySelectorAll("[data-blog-item]");
+// blogItems.forEach(handleBlogItemClick);

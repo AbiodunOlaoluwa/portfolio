@@ -130,6 +130,12 @@
   li { list-style: none; }
   
   img, ion-icon, a, button, time, span { display: block; }
+
+  .links {
+    text-decoration: underline;
+    color: var(--vegas-gold);
+    display: inline;
+  }
   
   button {
     font: inherit;

@@ -915,6 +915,16 @@
               </li>
             </ul>
           </section>
+          <div class="download-resume-button">
+            <a
+              class="form-btn"
+              href="/My Personal CV - AOS.pdf"
+              target="_blank"
+            >
+              <ion-icon name="download"></ion-icon>
+              <span>Download</span>
+            </a>
+          </div>
         </article>
 
         <!--
@@ -926,7 +936,7 @@
             <h2 class="h2 article-title">Portfolio</h2>
           </header>
 
-          <section class="projects">
+          <section class="projects" id="portfolio">
             <ul class="filter-list">
               <li class="filter-item">
                 <button class="active" data-filter-btn>All</button>
@@ -975,186 +985,225 @@
               </ul>
             </div>
 
-            <!-- Portfolio Modal Content -->
-            <div class="modal-container" data-modal-container>
-              <div class="overlay" data-overlay></div>
-
-              <section class="modal-content">
-                <button class="modal-close-btn" data-modal-close-btn>
-                  <ion-icon name="close-outline"></ion-icon>
-                </button>
-
-                <div class="modal-img-wrapper">
-                  <figure class="modal-avatar-box">
-                    <img
-                      src="Images/project-1.jpg"
-                      alt="modal image"
-                      width="80"
-                      data-modal-img
-                    />
-                  </figure>
-
-                  <img src="Images/icon-quote.svg" alt="quote icon" />
-                </div>
-
-                <div class="modal-content">
-                  <h4 class="h3 modal-title" data-modal-title>Modal Title</h4>
-
-                  <time datetime="2021-06-14">14 June, 2021</time>
-
-                  <div data-modal-text>
-                    <p class="text-color">Modal content goes here...</p>
-                  </div>
-                </div>
-              </section>
-            </div>
-
-            <!-- Portfolio Items -->
             <ul class="project-list">
               <li
-                class="project-item active eye-container"
-                data-filter-item
-                data-category="web development"
-                data-portfolio-item
-              >
-                <a>
-                  <figure class="project-img">
-                    <div class="project-item-icon-box">
-                      <ion-icon name="eye-outline"></ion-icon>
-                    </div>
-                    <img
-                      src="Images/project-1.jpg"
-                      alt="finance"
-                      loading="lazy"
-                    />
-                  </figure>
-                  <h3 class="project-title">Finance</h3>
-                  <p class="project-category">Web development</p>
-                  <p class="project-details hidden text-primary">This is details about the project</p>
-                </a>
-              </li>
-              <!-- Repeat for other portfolio items -->
-            </ul>
-
-
-            <!-- <ul class="project-list">
-              <li
-                class="project-item active"
-                data-filter-item
-                data-category="web development"
-              >
-                <a href="#">
-                  <figure class="project-img">
-                    <div class="project-item-icon-box">
-                      <ion-icon name="eye-outline"></ion-icon>
-                    </div>
-
-                    <img
-                      src="Images/project-1.jpg"
-                      alt="finance"
-                      loading="lazy"
-                    />
-                  </figure>
-
-                  <h3 class="project-title">Finance</h3>
-
-                  <p class="project-category">Web development</p>
-                </a>
-              </li>
-              
-              <li
-                class="project-item active"
-                data-filter-item
-                data-category="web development"
-              >
-                <a href="#">
-                  <figure class="project-img">
-                    <div class="project-item-icon-box">
-                      <ion-icon name="eye-outline"></ion-icon>
-                    </div>
-
-                    <img
-                      src="Images/project-2.png"
-                      alt="orizon"
-                      loading="lazy"
-                    />
-                  </figure>
-
-                  <h3 class="project-title">Orizon</h3>
-
-                  <p class="project-category">Web development</p>
-                </a>
-              </li>
-
-              <li
                 class="project-item active"
                 data-filter-item
                 data-category="web design"
               >
-                <a href="#">
+                <a href="https://notemaster-ogpd.onrender.com" target="_blank">
                   <figure class="project-img">
                     <div class="project-item-icon-box">
                       <ion-icon name="eye-outline"></ion-icon>
                     </div>
 
                     <img
-                      src="Images/project-3.jpg"
-                      alt="fundo"
+                      src="Images/notemaster-landingpage.png"
+                      alt="notemaster"
                       loading="lazy"
                     />
                   </figure>
 
-                  <h3 class="project-title">Fundo</h3>
+                  <h3 class="project-title">NoteMaster</h3>
 
-                  <p class="project-category">Web design</p>
+                  <p class="project-category">Web design & development</p>
+                  <div class="project-links">
+                    <a
+                      href="https://github.com/abiodunolaoluwa/notemaster"
+                      target="_blank"
+                      class="project-links"
+                    >
+                      <ion-icon name="logo-github"></ion-icon>
+                    </a>
+                  </div>
                 </a>
               </li>
 
               <li
                 class="project-item active"
                 data-filter-item
-                data-category="applications"
+                data-category="web development"
               >
-                <a href="#">
+                <a
+                  href="https://abiodunolaoluwa.github.io/dictionary-web-app/"
+                  target="_blank"
+                >
                   <figure class="project-img">
                     <div class="project-item-icon-box">
                       <ion-icon name="eye-outline"></ion-icon>
                     </div>
 
                     <img
-                      src="Images/project-4.png"
-                      alt="brawlhalla"
+                      src="Images/dictionary.webp"
+                      alt="dictionary"
                       loading="lazy"
                     />
                   </figure>
 
-                  <h3 class="project-title">Brawlhalla</h3>
+                  <h3 class="project-title">Dictionary</h3>
 
-                  <p class="project-category">Applications</p>
+                  <p class="project-category">Web development</p>
+                  <div class="project-links">
+                    <a
+                      href="https://github.com/abiodunolaoluwa/dictionary-web-app"
+                      target="_blank"
+                      class="project-links"
+                    >
+                      <ion-icon name="logo-github"></ion-icon>
+                    </a>
+                    <a
+                      href="https://www.frontendmentor.io/solutions/dictionary-web-app-AUL-17y4iE"
+                      target="_blank"
+                    >
+                      <img
+                        src="Images/frontendmentor-logo.png"
+                        alt="frontendmentor"
+                        class="frontendmentor-logo"
+                      />
+                    </a>
+                  </div>
                 </a>
               </li>
 
               <li
                 class="project-item active"
                 data-filter-item
-                data-category="web design"
+                data-category="web development"
               >
-                <a href="#">
+                <a
+                  href="https://abiodunolaoluwa.github.io/quiz-app"
+                  target="_blank"
+                >
                   <figure class="project-img">
                     <div class="project-item-icon-box">
                       <ion-icon name="eye-outline"></ion-icon>
                     </div>
 
-                    <img src="Images/project-5.png" alt="dsm." loading="lazy" />
+                    <img
+                      src="Images/frontendquizapp.webp"
+                      alt="quizapp"
+                      loading="lazy"
+                    />
                   </figure>
 
-                  <h3 class="project-title">DSM.</h3>
+                  <h3 class="project-title">Quiz App</h3>
 
-                  <p class="project-category">Web design</p>
+                  <p class="project-category">Web development</p>
+                  <div class="project-links">
+                    <a
+                      href="https://github.com/abiodunolaoluwa/quiz-app"
+                      target="_blank"
+                      class="project-links"
+                    >
+                      <ion-icon name="logo-github"></ion-icon>
+                    </a>
+                    <a
+                      href="https://www.frontendmentor.io/solutions/dictionary-web-app-AUL-17y4iE"
+                      target="_blank"
+                    >
+                      <img
+                        src="Images/frontendmentor-logo.png"
+                        alt="frontendmentor"
+                        class="frontendmentor-logo"
+                      />
+                    </a>
+                  </div>
                 </a>
               </li>
 
               <li
+                class="project-item active"
+                data-filter-item
+                data-category="web development"
+              >
+                <a
+                  href="https://abiodunolaoluwa.github.io/bmi-calculator"
+                  target="_blank"
+                >
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+
+                    <img
+                      src="Images/bmi-calculator.webp"
+                      alt="bmi calculator"
+                      loading="lazy"
+                    />
+                  </figure>
+
+                  <h3 class="project-title">BMI Calculator</h3>
+
+                  <p class="project-category">Web development</p>
+                  <div class="project-links">
+                    <a
+                      href="https://github.com/abiodunolaoluwa/bmi-calculator"
+                      target="_blank"
+                      class="project-links"
+                    >
+                      <ion-icon name="logo-github"></ion-icon>
+                    </a>
+                    <a
+                      href="https://www.frontendmentor.io/solutions/fully-responsive-bmi-calculator-app-7k-FngOuFc"
+                      target="_blank"
+                    >
+                      <img
+                        src="Images/frontendmentor-logo.png"
+                        alt="frontendmentor"
+                        class="frontendmentor-logo"
+                      />
+                    </a>
+                  </div>
+                </a>
+              </li>
+
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="web development"
+              >
+                <a
+                  href="https://abiodunolaoluwa.github.io/agecalculatorappreact"
+                  target="_blank"
+                >
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+
+                    <img
+                      src="Images/agecalculatorapp.webp"
+                      alt="agecalculatorappreact"
+                      loading="lazy"
+                    />
+                  </figure>
+
+                  <h3 class="project-title">Age Calculator App</h3>
+
+                  <p class="project-category">Web development</p>
+                  <div class="project-links">
+                    <a
+                      href="https://github.com/abiodunolaoluwa/agecalculatorappreact"
+                      target="_blank"
+                      class="project-links"
+                    >
+                      <ion-icon name="logo-github"></ion-icon>
+                    </a>
+                    <a
+                      href="https://www.frontendmentor.io/solutions/age-calculator-app-using-react-and-vanilla-css-WPzI1z8iij"
+                      target="_blank"
+                    >
+                      <img
+                        src="Images/frontendmentor-logo.png"
+                        alt="frontendmentor"
+                        class="frontendmentor-logo"
+                      />
+                    </a>
+                  </div>
+                </a>
+              </li>
+
+              <!-- <li
                 class="project-item active"
                 data-filter-item
                 data-category="web design"
@@ -1248,8 +1297,8 @@
 
                   <p class="project-category">Web development</p>
                 </a>
-              </li>
-            </ul> -->
+              </li> -->
+            </ul>
           </section>
         </article>
 

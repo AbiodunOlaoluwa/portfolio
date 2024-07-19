@@ -49,11 +49,6 @@ for (let i = 0; i < testimonialsItem.length; i++) {
 
 }
 
-// add click event to modal close button
-// modalCloseBtn.addEventListener("click", testimonialsModalFunc);
-// overlay.addEventListener("click", testimonialsModalFunc);
-
-
 
 // custom select variables
 const select = document.querySelector("[data-select]");
@@ -82,34 +77,6 @@ const modalFunc = function () {
 
 modalCloseBtn.addEventListener("click", modalFunc);
 overlay.addEventListener("click", modalFunc);
-
-const handlePortfolioItemClick = function (item) {
-    item.addEventListener("click", function () {
-        modalImg.src = this.querySelector("img").src;
-        modalImg.alt = this.querySelector("img").alt;
-        modalTitle.innerHTML = this.querySelector(".project-title").innerHTML;
-        modalText.innerHTML = this.querySelector(".project-details").innerHTML;
-
-        modalFunc();
-    });
-}
-
-const handleBlogItemClick = function (item) {
-    item.addEventListener("click", function () {
-        modalImg.src = this.querySelector("img").src;
-        modalImg.alt = this.querySelector("img").alt;
-        modalTitle.innerHTML = this.querySelector(".blog-item-title").innerHTML;
-        modalText.innerHTML = this.querySelector(".blog-text").innerHTML;
-
-        modalFunc();
-    });
-}
-
-const portfolioItems = document.querySelectorAll("[data-portfolio-item]");
-portfolioItems.forEach(handlePortfolioItemClick);
-
-const blogItems = document.querySelectorAll("[data-blog-item]");
-blogItems.forEach(handleBlogItemClick);
 
 // filter variables
 const filterItems = document.querySelectorAll("[data-filter-item]");

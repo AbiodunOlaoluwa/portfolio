@@ -1018,6 +1018,29 @@ main {
   --eerie-black-2: hsl(240, 2%, 20%);
 }
 
+.project-links {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  color: var(--light-gray-70);
+  font-size: 20px;
+}
+
+.project-links:hover {
+  color: var(--light-gray);
+}
+
+.frontendmentor-logo {
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  background-color: var(--light-gray-70);
+}
+
+.frontendmentor-logo:hover {
+  background-color: var(--light-gray);
+}
+
 .project-list {
   display: grid;
   grid-template-columns: 1fr;
@@ -1631,6 +1654,11 @@ textarea.form-input::-webkit-resizer {
   /**
      * #RESUME
      */
+
+
+     .download-resume-button {
+      margin: 1rem 0;
+     }
 
   .timeline-list {
     margin-left: 65px;

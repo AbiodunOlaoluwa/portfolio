@@ -310,6 +310,7 @@ article.active {
   box-shadow: var(--shadow-2);
   cursor: pointer;
   z-index: 1;
+  margin-bottom: 1rem;
 }
 
 .content-card::before {

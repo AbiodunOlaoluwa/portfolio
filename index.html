@@ -4,10 +4,13 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="HandheldFriendly" content="true">
-    <meta name="author" content="Abiodun Olaoluwa Solomon">
-    <meta name="robots" content="index, follow">
-    <meta name="description" content="Abiodun Olaoluwa Solomon's Portfolio Site">
+    <meta name="HandheldFriendly" content="true" />
+    <meta name="author" content="Abiodun Olaoluwa Solomon" />
+    <meta name="robots" content="index, follow" />
+    <meta
+      name="description"
+      content="Abiodun Olaoluwa Solomon's Portfolio Site"
+    />
     <title>Abiodun Olaoluwa Solomon</title>
 
     <!--
@@ -200,27 +203,29 @@
 
           <section class="about-text">
             <p>
-              I'm a Full-Stack Developer based in Lagos, Nigeria, specializing
-              in Frontend development. With a strong background in React, Axios, RESTful APIs handling, JSON handling, Express, and
-              PostgreSQL, I enjoy transforming complex challenges into elegant,
-              functional, and user-friendly solutions.
+              I'm a Full-Stack Developer based in Lagos, Nigeria, with a focus
+              on Frontend development. I specialize in TypeScript, Next.js,
+              React, Axios, RESTful API integration, JSON handling, Express, and
+              PostgreSQL. I take pride in turning complex challenges into sleek,
+              functional, and user-friendly digital solutions.
             </p>
 
             <p>
-              My passion lies in building websites and applications that are not
-              only efficient and reliable but also visually appealing and
-              intuitive. As a Physics student, I bring a unique analytical
-              perspective to problem-solving, ensuring that each project I
-              undertake is meticulously crafted and thoroughly tested.
+              My passion is crafting websites and applications that not only
+              perform efficiently but also captivate with their visual appeal
+              and intuitive design. Drawing on my background as a Physics
+              student, I bring a unique, analytical perspective to
+              problem-solving, ensuring every project I work on is meticulously
+              planned and thoroughly tested.
             </p>
 
             <p>
-              Whether working independently or as part of a cross-functional
-              team, my goal is to deliver products that effectively communicate
-              your brand's message and identity. My commitment to clean,
-              efficient code and optimal functionality ensures an exceptional
-              user experience. Recently, I developed Notemaster, a project that
-              showcases my ability to create practical and impactful solutions.
+              Whether collaborating within a team or working independently, my
+              aim is to build products that clearly communicate your brand's
+              message and identity. I prioritize writing clean, efficient code
+              to deliver seamless user experiences. One of my recent projects,
+              Notemaster, is a great example of how I create practical and
+              impactful solutions for real-world challenges.
             </p>
           </section>
 
@@ -658,6 +663,38 @@
 
             <ol class="timeline-list">
               <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">
+                  Devlinks Web App - A fully-functional link sharing platform
+                  for developers.
+                </h4>
+
+                <span>2024</span>
+
+                <p class="timeline-text">
+                  - Developed a customizable, shareable profile-link management
+                  platform using Next.js and TypeScript. <br />
+                  - Integrated user authentication with NextAuth for secure
+                  session management. <br />
+                  - Utilized dynamic routing to generate personalized profile
+                  pages for users based on unique IDs. <br />
+                  - Implemented seamless image uploads via Cloudinary, allowing
+                  users to customize their profiles with profile photos. <br />
+                  - Enabled users to add, edit, and delete platform links (e.g.,
+                  GitHub, LinkedIn, etc.), enhancing personalization and
+                  engagement. <br />
+                  - Added real-time clipboard functionality, enabling users to
+                  copy their personalized links with one click, reducing user
+                  friction. <br />
+                  - Integrated Toast notifications for intuitive feedback during
+                  user interactions like link updates and sharing. <br />
+                  - Applied Prisma as the database ORM, enabling efficient user
+                  data storage and retrieval. <br />
+                  - Skills: Next.js, TypeScript, Prisma, React.js, Cloudinary,
+                  CSS, HTML5, Node.js, PostgreSQL.
+                </p>
+              </li>
+
+              <li class="timeline-item">
                 <h4 class="h4 timeline-item-title">Dictionary Web App</h4>
 
                 <span>2024</span>
@@ -913,7 +950,9 @@
 
               <li class="skills-item">
                 <div class="title-wrapper">
-                  <h5 class="h5">Relational Database Setup and Management (PostgreSQL)</h5>
+                  <h5 class="h5">
+                    Relational Database Setup and Management (PostgreSQL)
+                  </h5>
                   <data value="70">70%</data>
                 </div>
 
@@ -932,7 +971,6 @@
                   <div class="skill-progress-fill" style="width: 30%"></div>
                 </div>
               </li>
-
             </ul>
           </section>
           <div class="download-resume-button">
@@ -1009,6 +1047,42 @@
               <li
                 class="project-item active"
                 data-filter-item
+                data-category="web development"
+              >
+                <a href="https://aosdevlinks.vercel.app" target="_blank">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+
+                    <img
+                      src="Images/devlinksPage.png"
+                      alt="devlinks"
+                      loading="lazy"
+                    />
+                  </figure>
+
+                  <h3 class="project-title">
+                    Devlinks - A fully-functional link-sharing app for
+                    developers.
+                  </h3>
+
+                  <p class="project-category">Web development</p>
+                  <div class="project-links">
+                    <a
+                      href="https://github.com/abiodunolaoluwa/devlinks"
+                      target="_blank"
+                      class="project-links"
+                    >
+                      <ion-icon name="logo-github"></ion-icon>
+                    </a>
+                  </div>
+                </a>
+              </li>
+
+              <li
+                class="project-item active"
+                data-filter-item
                 data-category="web design"
               >
                 <a href="https://notemaster-ogpd.onrender.com" target="_blank">
@@ -1026,7 +1100,10 @@
 
                   <h3 class="project-title">NoteMaster</h3>
 
-                  <p class="project-category">Web design & development</p>
+                  <p class="project-category">
+                    Web design & development -
+                    <span class="redText">Only desktop view is supported*</span>
+                  </p>
                   <div class="project-links">
                     <a
                       href="https://github.com/abiodunolaoluwa/notemaster"
